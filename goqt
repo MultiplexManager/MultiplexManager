@@ -1,0 +1,3 @@
+#!/bin/sh
+export QTDIR=/Users/paul/QtSDK/Desktop/Qt/472/gcc
+export PATH=$QTDIR/bin:$PATH

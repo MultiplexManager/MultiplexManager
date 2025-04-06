@@ -1,0 +1,2 @@
+#!/bin/sh
+qmake -project QT+=xml "mac { ICON=application.icns }" "win32 { RC_FILE=application.rc }" "mac { CONFIG += x86 ppc }" 
