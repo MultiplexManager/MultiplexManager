@@ -339,7 +339,7 @@ void ResultsDisplay::AddScale( int minx, int maxx,
         {
             QGraphicsTextItem* label = addText( QString::number( x ), font );
             QRectF bounds = label->boundingRect();
-            label->translate( xPixel - bounds.width() * 0.5f, top -15 - bounds.height() );
+            label->setTransform(QTransform::fromTranslate(xPixel - bounds.width() * 0.5f, top -15 - bounds.height()), true);
         }
     }
 

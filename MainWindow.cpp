@@ -42,6 +42,8 @@
 
 #include "AnnealTempParams.h"
 
+#include <QPrinter>
+
 static const float VERSION = 1.2f;
 static const QString APPLICAITON_NAME = QObject::tr("Multiplex Manager %1").arg( VERSION, 0, 'f', 1 );
 
@@ -496,7 +498,7 @@ void MainWindow::Save( const QString & fileName )
 
     QFile file( fileName );
     file.open( QIODevice::WriteOnly | QIODevice::Text );
-    file.write( doc.toString().toAscii() );
+    file.write( doc.toString().toLatin1() );
     file.close();
 
     m_CurrentFileName = fileName;

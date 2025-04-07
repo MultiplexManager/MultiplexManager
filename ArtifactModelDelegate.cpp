@@ -6,6 +6,7 @@
 
 #include <QUndoStack>
 #include "ModelUndoCommand.h"
+#include <QLineEdit>
 
 ArtifactModelDelegate::ArtifactModelDelegate(QUndoStack* undoStack, QObject *parent)
     : QItemDelegate(parent),
