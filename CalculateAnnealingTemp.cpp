@@ -109,7 +109,7 @@ float CalculateMeltingTemp( const QString & sequence, float concentration )
 	QString strand = sequence.trimmed().toLower();
 	strand.remove( QRegExp("[^atgc]") );
 
-    const QByteArray & letterArray = strand.toAscii();
+    const QByteArray & letterArray = strand.toLatin1();
 
     const char* letters = letterArray.data();
 	

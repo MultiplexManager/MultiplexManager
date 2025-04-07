@@ -10,6 +10,7 @@
 
 #include "ModelUndoCommand.h"
 #include <QUndoStack>
+#include <QComboBox>
 
 MarkerModelDelegate::MarkerModelDelegate(QUndoStack* undoStack, QSortFilterProxyModel* proxy, 
 					 const QVector<DyeInfo> & dyeData,

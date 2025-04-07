@@ -136,7 +136,8 @@ public:
 
     void ResetData() 
     {
-        reset();
+        beginResetModel();
+	endResetModel();
     }
 
     

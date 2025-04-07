@@ -266,7 +266,7 @@ QVariant MarkerModel::data ( const QModelIndex & index, int role ) const
             }
             else
             {
-                return Qt::white;
+                return QColor(Qt::white);
             }            
         }
         else

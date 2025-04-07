@@ -73,8 +73,10 @@ LocusDisplay::LocusDisplay( const QColor & mainColor, int markerWidth,
         }
     }
 
-    m_Text.translate(  arcSize * 0.5f, 
-                       ( height * 0.5f ) - ( bounds.height() * 0.5f ) );
+//    m_Text.translate(  arcSize * 0.5f, 
+//                       ( height * 0.5f ) - ( bounds.height() * 0.5f ) );
+
+    setTransform(QTransform::fromTranslate(arcSize * 0.5f, ( height * 0.5f ) - ( bounds.height() * 0.5f )), true);
 
     //m_Text.setTextWidth( width );
     setToolTip( toolTip );
